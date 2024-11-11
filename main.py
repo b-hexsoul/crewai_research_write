@@ -5,7 +5,7 @@ from utils import get_openai_api_key
 from IPython.display import Markdown
 
 openai_api_key = get_openai_api_key()
-os.enivron["OPENAI_MODEL_NAME"] = 'gpt-3.5-turbo'
+os.environ["OPENAI_MODEL_NAME"] = 'gpt-3.5-turbo'
 warnings.filterwarnings("ignore")
 
 planner = Agent(
